@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #4772ff;
+  }
+  
+  main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #spin {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border-top: solid 5px rgba(200, 200, 200, 0.3);
+    border-right: solid 5px rgba(200, 200, 200, 0.3);
+    border-bottom: solid 5px rgba(200, 200, 200, 0.3);
+    border-left: solid 5px #ff1c3e;
+    animation: spin 1s infinite linear;
+  }
+  #work {
+    position: absolute;
+    font-family: Lato, sans-serif;
+    bottom: 90px;
+    left: 35px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

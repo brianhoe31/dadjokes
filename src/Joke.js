@@ -3,6 +3,8 @@ import './Joke.css';
 import './fontawesomeall'
 
 class Joke extends Component {
+
+
     constructor(props){
         super(props);
         this.addPoint = this.addPoint.bind(this);
@@ -29,7 +31,8 @@ class Joke extends Component {
                 </div>
                 
                 <p>{this.props.joke}</p>
-                {this.props.faces(this.props.points)}
+                <i className={`far fa-grin${this.props.face}`}></i>
+                {this.props.face}
             </div>
         )
     }
