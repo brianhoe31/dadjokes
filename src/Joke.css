@@ -1,0 +1,9 @@
+.Joke {
+    width: 30%;
+    margin: auto;   
+}
+
+.Joke p {
+    display: inline-block;
+}
+
